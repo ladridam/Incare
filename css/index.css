@@ -89,12 +89,14 @@ nav {
     position: relative;
     width: 100%;
     overflow: hidden;
-    max-height: 100vh;
+    max-height: 40vh;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 40dvh;
     object-fit: cover;
 }
 
@@ -146,6 +148,20 @@ nav {
     background-color: #333;
     margin: 5px;
     transition: all 0.3s ease;
+}
+
+/*incare-content*/
+.incare-content h2, h3, p {
+    padding: 1px;
+    text-align: center;
+}
+.incare-content ol {
+    list-style: none;
+    text-align: center;
+}
+.incare-content h2:hover, h3:hover {
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Mobile Styles */
