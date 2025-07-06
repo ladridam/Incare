@@ -18,6 +18,7 @@
                     <li><a href="#incare">Incare</a></li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#listening-space">Listening Space</a></li>
                     <li><a href="#blogs">Blogs</a></li>
                 </ul>
                 <!--BURGER MENU FOR MOBILE SCREENS-->
@@ -28,33 +29,119 @@
                 </div>
             </div>
         </nav>
-        <!--hero-->
+        <!--hero-content-->
         <section class="hero">
-            <div class="hero-container"><img src="assets/backdrop.jpeg" alt="ref" loading="lazy"></div>
             <div class="hero-content">
-                <h1>Incare</h1>
-                <p>You are in care</p>
-                <button>Learn More</button>
+                <h1>Wellness That <span class="highlight">Listens</span></h1>
+                <p class="subtitle">In a world that shouts solutions, we offer something radical - space to be heard</p>
+                <div class="cta-buttons">
+                    <a href="#listening-space" class="btn-primary">Experience Listening Space</a>
+                    <a href="#wellness-assessment" class="btn-secondary">Take Wellness Check</a>
+                </div>
             </div>
-        </section>
-        <section class="incare">
-            <div class="incare-content">
-                <h2>Our Vision</h2>
-                <p>To create a nurturing and inclusive space that empowers students to take charge of their wellbeing, build resilience, and cultivate habits that lead to a balanced and fulfilling life.</p>
-                <br>
-                <h3>Why This Initiative?</h3>
-                <p>
-                    <ol>
-                        <li>Rising levels of stress and burnout in college students</li>
-                        <li>Builds a positive campus culture centered around care and balance</li>
-                    </ol>
-                </p>
+            <div class="hero-image">
+                <!-- Use an illustration of diverse students in casual conversation -->
             </div>
-        </section>
-        <section class="grid">
-            
         </section>
     </header>
+
+    <section class="incare">
+        <div class="incare-content">
+            <h2>Our Vision</h2>
+            <p>To create a nurturing and inclusive space that empowers students to take charge of their wellbeing, build
+                resilience, and cultivate habits that lead to a balanced and fulfilling life.</p>
+            <br>
+            <h3>Why This Initiative?</h3>
+            <p>
+            <ol>
+                <li>Rising levels of stress and burnout in college students</li>
+                <li>Builds a positive campus culture centered around care and balance</li>
+            </ol>
+            </p>
+        </div>
+    </section>
+    <!--Listening-Space-->
+    <section id="listening-space" class="feature-section">
+        <div class="section-header">
+            <h2>The <span class="accent">Listening Space</span></h2>
+            <p class="tagline">Where your voice matters exactly as it is</p>
+        </div>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <div class="card-icon">👂</div>
+                <h3>What It Is</h3>
+                <p>A confidential space to share without judgment or unsolicited advice</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <div class="card-icon">🤝</div>
+                <h3>Who Listens</h3>
+                <p>Trained peer supporters certified in active listening techniques</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <div class="card-icon">⏱️</div>
+                <h3>How It Works</h3>
+                <p>30-minute sessions where you control what to share</p>
+            </div>
+        </div>
+
+        
+        <!-- JavaScript-powered testimonial slider 
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"The Listening Space helped me feel less alone during my toughest semester."</p>
+                <span class="author">- Priya, 2nd Year CS</span>
+            </div>
+        </div-->
+        
+    </section>
+    <!--wellness-check-->
+    <section id="wellness-assessment" class="wellness-check">
+        <h2>Quick Wellness Check</h2>
+        <p>Rate these areas of your life (1-5 scale):</p>
+
+        <form id="wellness-form">
+            <div class="form-group">
+                <label for="stress-level">Stress Management</label>
+                <input type="range" id="stress-level" min="1" max="5">
+                <label for="burnout-level">Burnout Experience</label>
+                <input type="range" id="burnout-level" min="1" max="5">
+                <!-- similar fields for sleep, social, etc to be added -->
+            </div>
+
+            <button type="submit" class="btn-primary">Get Personalized Tips</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <!-- JavaScript will populate this -->
+        </div>
+    </section>
+    <!--problem-solutions-->
+    <section class="problems-solutions">
+        <h2>We Understand Your Challenges</h2>
+        
+        <div class="grid-container">
+          <!-- Example item - repeat for each problem -->
+          <div class="grid-item">
+            <div class="problem-card">
+              <h3>Burnout</h3>
+              <p>Feeling exhausted despite working hard</p>
+            </div>
+            <div class="solution-card">
+              <h3>Our Approach</h3>
+              <ul>
+                <li>Energy management workshops</li>
+                <li>Study-break buddy system</li>
+              </ul>
+            </div>
+          <!-- Add other items following same pattern -->
+        </div>
+      </section>
 
     <script src="script/index.js"></script>
 </body>
